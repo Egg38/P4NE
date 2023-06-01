@@ -29,8 +29,6 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         HorizontalMovement();
-
-        ApplyGravity();
     }
 
     private void HorizontalMovement()
@@ -48,12 +46,6 @@ public class PlayerMovement : MonoBehaviour
             velocity.y = jumpForce;
             jumping = true;
         }
-    }
-
-    private void ApplyGravity()
-    {
-        bool falling = velocity.y 
-        velocity.y += gravity * Time.deltaTime;
     }
 
     private void FixedUpdate()
